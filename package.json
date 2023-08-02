@@ -1,17 +1,18 @@
 {
   "name": "nodejs1",
   "version": "1.0.0",
-  "description": "Devcamper backend api",
+  "description": "Devcamper NodeJS project",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production nodemon -L server",
-    "dev": "nodemon -L server"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
   },
   "author": "Abhijeet Dandekar",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
